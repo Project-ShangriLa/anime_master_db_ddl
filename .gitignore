@@ -16,4 +16,5 @@ mkmf.log
 *.iml
 conf/conf.json
 anime_master_api
+.DS_store
 sora_api_go_native

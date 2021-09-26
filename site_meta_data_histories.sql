@@ -24,22 +24,22 @@ DROP TABLE IF EXISTS `site_meta_data_histories`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `site_meta_data_histories` (
   `bases_id` int DEFAULT NULL,
-  `public_url` varchar(255) DEFAULT NULL,
-  `description` varchar(1024) DEFAULT NULL,
-  `keywords` varchar(2048) DEFAULT NULL,
-  `author` varchar(255) DEFAULT NULL,
-  `og_title` varchar(255) DEFAULT NULL,
-  `og_type` varchar(255) DEFAULT NULL,
-  `og_description` varchar(1024) DEFAULT NULL,
-  `og_url` varchar(255) DEFAULT NULL,
-  `og_image` varchar(255) DEFAULT NULL,
-  `og_site_name` varchar(255) DEFAULT NULL,
+  `public_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `keywords` varchar(2048) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `author` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `og_title` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `og_type` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `og_description` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `og_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `og_image` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `og_site_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `get_date` datetime DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   KEY `index_site_meta_data_histories_on_bases_id` (`bases_id`),
   KEY `site_meta_data_histories_id_get_date` (`bases_id`,`get_date`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +51,4 @@ CREATE TABLE `site_meta_data_histories` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-23 17:36:12
+-- Dump completed on 2021-09-26 15:45:19
